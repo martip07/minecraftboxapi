@@ -11,8 +11,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Howdy from demo main")
-	// TwitchProcEs()
+	fmt.Println("Howdy from minecraftbox API v1")
 	r := router.New()
 	r.GET("/", handlers.Index)
 	r.GET("/streaming/twitch", handlers.StreamingHandler)
