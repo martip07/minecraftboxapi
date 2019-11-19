@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"github.com/martip07/minecraftboxapi/strutcs"
+
+	"github.com/martip07/minecraftboxapi/structs"
 
 	"gopkg.in/h2non/gentleman.v2"
 	"gopkg.in/h2non/gentleman.v2/plugins/headers"
