@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/martip07/minecraftbox-api/handlers"
+	"github.com/martip07/minecraftboxapi/handlers"
 
 	"github.com/fasthttp/router"
 	"github.com/valyala/fasthttp"

@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/martip07/minecraftbox-api/procs"
-	"github.com/martip07/minecraftbox-api/structs"
+	"github.com/martip07/minecraftboxapi/procs"
+	"github.com/martip07/minecraftboxapi/structs"
 
 	"github.com/valyala/fasthttp"
 )
