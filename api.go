@@ -1,4 +1,4 @@
-package minecraftboxapi
+package main
 
 import (
 	"fmt"

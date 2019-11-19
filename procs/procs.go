@@ -14,7 +14,6 @@ import (
 
 func TwitchProc(_idGame string, _idLanguage string) structs.Streams {
 	cli := gentleman.New()
-	str
 	cli.SetHeader("App", "minecraftbox")
 	cli.Use(headers.Set("Client-ID", os.Getenv("CLIENTID")))
 	uriBase := "https://api.twitch.tv/helix/streams?first=20&game_id=" + _idGame + "&language=" + _idLanguage
