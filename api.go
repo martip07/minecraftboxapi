@@ -13,7 +13,7 @@ import (
 func main() {
 	fmt.Println("Howdy from minecraftbox API v1")
 	r := router.New()
-	r.GET("/", handlers.Index)
-	r.GET("/streaming/twitch", handlers.StreamingHandler)
+	r.GET("/api/", handlers.Index)
+	r.GET("/api/streaming/twitch", handlers.StreamingHandler)
 	log.Fatal(fasthttp.ListenAndServe(":8080", r.Handler))
 }
