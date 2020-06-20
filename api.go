@@ -16,5 +16,5 @@ func main() {
 	r.GET("/api/", handlers.Index)
 	r.GET("/api/profiler/twitch", handlers.AuthHandler)
 	r.GET("/api/streaming/twitch", handlers.StreamingHandler)
-	log.Fatal(fasthttp.ListenAndServe(":8081", r.Handler))
+	log.Fatal(fasthttp.ListenAndServe(":8080", r.Handler))
 }
