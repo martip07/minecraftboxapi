@@ -56,6 +56,9 @@ func AuthHandler(ctx *fasthttp.RequestCtx) {
 	}
 	json := &tokenData{}
 	res.JSON(json)
+	if os.Getenv("ENVAPP") != "production" {
+		fmt.Println(json)
+	}
 }
 
 func StreamingHandler(ctx *fasthttp.RequestCtx) {

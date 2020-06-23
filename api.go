@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"log"
+	"os"
 
 	"github.com/martip07/minecraftboxapi/handlers"
 
@@ -16,5 +17,5 @@ func main() {
 	r.GET("/api/", handlers.Index)
 	r.GET("/api/profiler/twitch", handlers.AuthHandler)
 	r.GET("/api/streaming/twitch", handlers.StreamingHandler)
-	log.Fatal(fasthttp.ListenAndServe(":8080", r.Handler))
+	log.Fatal(fasthttp.ListenAndServe(":"+os.Getenv("APPPORT"), r.Handler))
 }
