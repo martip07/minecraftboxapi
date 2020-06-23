@@ -1,6 +1,6 @@
-# minecraftboxapi
+# minecraftboxapi-twitch
 
-**minecraftboxapi** es un ejemplo de como usar golang y el API de Twitch para listar streams referentes a un videojuego.
+**minecraftboxapi-twitch** es un ejemplo de como usar golang y el API de Twitch para listar streams referentes a un videojuego.
 
 Actualmente se puede ver un ejemplo de este servicio en la sección de streaming de [Minecraftbox](https://minecraftbox.io/).
 
