@@ -76,6 +76,7 @@ func StreamingHandler(ctx *fasthttp.RequestCtx) {
 
 		}
 		ctx.SetContentType("application/json; charset=utf-8")
+		ctx.Response.Header.Set("Access-Control-Allow-Origin", "*")
 		ctx.Response.Header.Set("Cache-Control", "public, max-age=600")
 		ctx.Response.Header.Set("Server", "go-minecraftbox")
 		ctx.SetStatusCode(200)
@@ -94,6 +95,7 @@ func StreamingHandler(ctx *fasthttp.RequestCtx) {
 
 	}
 	ctx.SetContentType("application/json; charset=utf-8")
+	ctx.Response.Header.Set("Access-Control-Allow-Origin", "*")
 	ctx.Response.Header.Set("Cache-Control", "public, max-age=600")
 	ctx.Response.Header.Set("Server", "go-minecraftbox")
 	ctx.SetStatusCode(200)
